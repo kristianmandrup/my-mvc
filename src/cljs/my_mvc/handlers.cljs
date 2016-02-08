@@ -1,7 +1,6 @@
 (ns my-mvc.handlers
-    (:require-macros [reagent.ratom :refer [reaction]])
-    (:require [re-frame.core :refer [register-handler]]
-              [reagent.ratom :refer [reaction]]))
+    (:require
+      [re-frame.core :refer [register-handler]]))
 
 (register-handler
   :initialise-db             ;; usage: (dispatch [:initialise-db])
