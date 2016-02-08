@@ -15,4 +15,4 @@
 (register-sub       ;; we can check if there is data
   :initialised?     ;; usage (subscribe [:initialised?])
   (fn  [db]
-    (reaction (not (empty? @db))))   ;; do we have data
+    (reaction (not (empty? @db)))))   ;; do we have data
